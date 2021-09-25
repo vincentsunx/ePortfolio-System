@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Invictus - Eportfolio System</title>
+        <meta name="description" content="Invictus, Eportfolio, Eportfolio system, student, university, phd" />
+        <meta name="keywords"  content="Invictus, Eportfolio, Eportfolio system, student, university, phd" />
+        <meta name="Resource-type" content="Document"/>
+
+        <!-- Upload Font "https://fonts.google.com/" -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <!-- Styles CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/az-styles.css" />
+        <!-- Load Font Awesome Kit -->
+        <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
+        <!-- Load Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <!-- Load AOS CSS -->
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <!-- Slick Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    </head>
+    <body class="white">
+
+        <!-- Main Content Starts -->
+        <header class="b-gold white">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Change path logo here -->
+                  <a class="navbar-brand logo" href="home.html"><img src="assets/img/logo.png" alt="Exodus" class="img-fluid"></a>
+
+                  <!-- Collapse button -->
+                  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="animated-icon"><span></span><span></span><span></span></span>
+                  </button>
+                  <!-- Collapsible content -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="edit-home.html">Create</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="edit-home.html">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme-page.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search-page.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  t-gold" href=""><i class="far fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                  </div>
+                </nav>
+             </div>
+        </header>
+
+        <!-- Section -->
+        <div id="about" class="section no-padding">
+            <iframe src="assets/img/dalao.jpg" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+        </div><!-- Section Ends -->
+
+        <!-- Section -->
+        <div id="contact" class="section white center">
+            <div class="container">
+                <h5 class="t-black">CONTACT US</h5>
+                <span class="line gold"></span>
+                <h2 class="mt-20">Let's <span class="t-gold">Talk</span></h2>
+                <h6 class="center">Fill the form below and let us know how can we help you.</h6>
+                <div id="fields">
+                    <!-- CONTACT Form-->
+                    <form id="contact-form">
+                        <div class="controls center">
+                            <div id="note" class="messages t-dark"></div>
+                            <div class="input-item half form-group">
+                                <input id="form_email" type="email" name="email" class="form-control half light-grey" placeholder="Email address*" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="input-item half form-group">
+                                <input id="form_name" type="text" name="name" class="form-control half light-grey" placeholder="Your Name*" required="required" data-error="Name is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="input-item form-group">
+                                <textarea id="form_message" name="message" rows="4" class="form-control light-grey" placeholder="Your Message*" required="required" data-error="Message is required."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                              <input type="submit" name="submit" id="submit" class="primary-btn m-20 large black t-white" onclick = "submitForm()" value="Send">
+                        </div>
+                    </form><!-- END CONTACT Form-->
+                </div>
+            </div>
+        </div><!-- Section Ends -->
+
+        <!-- Section -->
+        <div class="section back five">
+            <div class="container center">
+                <h5 class="t-white">stay connected</h5>
+                <span class="line gold"></span>
+            </div>
+        </div><!-- Section Ends -->
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="links t-black">
+                        <a href="edit-home.html">Create</a>
+                        <a href="aboutme-page.html">About me</a>
+                        <a href="search-page.html">Search</a>
+                        <a href="contact-page.html">Contact</a>
+                    </div>
+                    <div class="copyright t-grey center">2020 - All rights reserved to &copy;Invictus team</div>
+                </div>
+            </footer>
+
+            <!-- FireBase set up -->
+
+            <!-- The core Firebase JS SDK is always required and must be listed first -->
+            <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+            <!-- TODO: Add SDKs for Firebase products that you want to use
+                 https://firebase.google.com/docs/web/setup#available-libraries -->
+            <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+            <script>
+              // Your web app's Firebase configuration
+              var firebaseConfig = {
+                apiKey: "AIzaSyD7dOBg19mnoDdE_n2o5fV2FXoojeSDliw",
+                authDomain: "eportfolio-74c20.firebaseapp.com",
+                databaseURL: "https://eportfolio-74c20.firebaseio.com",
+                projectId: "eportfolio-74c20",
+                storageBucket: "eportfolio-74c20.appspot.com",
+                messagingSenderId: "384834138871",
+                appId: "1:384834138871:web:18aacf6823f9a0c3c219f2",
+                measurementId: "G-LZ3LTNRGCB"
+              };
+              // Initialize Firebase
+              firebase.initializeApp(firebaseConfig);
+              firebase.analytics();
+            </script>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/validator.min.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/email.js"></script>
+    </body>
+</html>

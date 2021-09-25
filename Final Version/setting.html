@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Setting</title>
+    <link rel="stylesheet" href = "./seetting.css">
+</head>
+<body>
+    <div class="container">
+       <div class="login-box">
+            <div class="apple-btn login-apple">
+                <li class="red-btn"></li>
+                <li class="yellow-btn"></li>
+                <li class="green-btn"></li>
+            </div>
+            <div class="title">Before we start...</div>
+            <div class="input">
+                <input type="text"  placeholder="First Name " id="user_first" style="text-transform:uppercase"/>
+            </div>
+            <div class="input">
+                <input type="text"  placeholder="Last Name " id="user_last" style="text-transform:uppercase"/>
+            </div>
+            <div class="input">
+                <input type="text"  placeholder="Country " id="user_country" style="text-transform:uppercase"/>
+            </div>
+            <div class="input">
+                <input type="text"  placeholder="City " id="user_city" style="text-transform:uppercase"/>
+            </div>
+            <div class="input">
+                <input type="text"  placeholder="University " id="user_university" style="text-transform:uppercase"/>
+            </div>
+            <div class="input">
+                <input type="text"  placeholder="Faculty " id="user_faculty" style="text-transform:uppercase"/>
+            </div>
+            <div class="input">
+                <input type="text"  placeholder="Job Occupation " id="user_job" style="text-transform:uppercase"/>
+            </div>
+
+            <div class="btn login-btn">
+                <span onclick = "update()">Submit</span>
+            </div>
+       </div>
+
+
+                </div>
+            </div>
+       </div>
+    </div>
+
+
+
+    <!-- FireBase set up -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+     firebase.auth().onAuthStateChanged(function(user) {
+     if (user) {
+       //window.location.href = "index2.html";
+    }
+  });
+  </script>
+
+
+
+</body>
+
+
+</html>

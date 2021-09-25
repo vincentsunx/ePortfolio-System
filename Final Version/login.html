@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePortfolio System</title>
+    <link rel="stylesheet" href = "./style.css">
+</head>
+<body>
+  <div class="center">
+  <font color = "#F0F8FF">ePortfolio System </font>
+  </div>
+    <div class="container">
+       <div class="login-box">
+            <div class="apple-btn login-apple">
+                <li class="red-btn"></li>
+                <li class="yellow-btn"></li>
+                <li class="green-btn"></li>
+            </div>
+            <div class="title">Log in</div>
+            <div class="input">
+                <input type="email"  placeholder="Email to login /reset password" id="login-user">
+            </div>
+            <div class="input">
+                <input type="password" placeholder="Password" id="login-password" >
+            </div>
+            <div class="btn login-btn">
+                <span onclick = "login()">Login</span>
+            </div>
+            <div class="change-box login-change">
+                <div class="change-btn toSign">
+                    <span>Sign up</span>
+                </div>
+            </div>
+            <div class="reset">
+                <span onclick = "resetPass()">Reset Passward </span>
+            </div>
+       </div>
+
+       <div class="sign-box">
+            <div class="apple-btn sign-apple">
+                <li class="red-btn"></li>
+                <li class="yellow-btn"></li>
+                <li class="green-btn"></li>
+            </div>
+            <div class="title">Sign Up</div>
+            <div class="input">
+                <input type="text" id="sign-user" placeholder="Enter email to sign up">
+            </div>
+            <div class="input">
+                <input type="password" id="sign-password" placeholder="Enter your password">
+            </div>
+            <div class="btn sign-btn">
+                <span onclick = "signUp()">Sign Up</span>
+            </div>
+            <div class="change-box sign-change">
+                <div class="change-btn toLogin">
+                    <span>Log In</span>
+                </div>
+            </div>
+       </div>
+    </div>
+
+
+
+    <!-- FireBase set up -->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+     firebase.auth().onAuthStateChanged(function(user) {
+     if (user) {
+       var userId = firebase.auth().currentUser.uid;
+       firebase.database().ref('Users/' + userId).once('value').then(function(snapshot)
+       {
+         if(snapshot.val()){
+           window.location.href = "home.html";
+            //window.location.href = "setting.html";
+         }else{
+           window.location.href = "setting.html";
+         }
+       });
+       //window.location.href = "index2.html";
+    }
+  });
+  </script>
+
+
+
+</body>
+
+
+</html>

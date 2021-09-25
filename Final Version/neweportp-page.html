@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Invictus ePortfolio</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="home.html" class="nav__logo">Invictus</p></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                      <li class="nav__item"><a href="#home" class="nav__link active">Introduction</a></li>
+                      <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                      <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                      <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                      <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color"><strong id = 'first-name'></strong></span><br><strong id = 'job'></strong><br>From <strong id = 'school'></strong></h1>
+                    <a href="#contact" class="button">Contact</a>
+
+                </div>
+
+                <div class="home__social">
+                    <a class="home__social-icon" onclick="goToLinkedin()"><i class='bx bxl-linkedin'></i></a>
+                    <a class="home__social-icon" onclick="goToBehance()"><i class='bx bxl-behance' ></i></a>
+                    <a class="home__social-icon" onclick="goToGithub()"><i class='bx bxl-github' ></i></a>
+                </div>
+
+
+
+
+                <div class="home__img">
+
+
+
+                  <section class = "ui two column center aligned grid" id = 'profile-view'>
+                    <div class="column ui segment">
+                      <img  class="ui image centered" id = 'img'>
+                    </div>
+                  </section>
+
+
+                </div>
+
+
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+
+
+
+                        <section class = "ui two column center aligned grid" id = 'profile-view'>
+
+                          <div class="column ui segment">
+                            <img  class="ui image centered" id = 'imgAbout'>
+                          </div>
+                        </section>
+
+
+                    </div>
+
+                    <div>
+                      <section class = 'ui two column center aligned grid' id = 'text-view'>
+
+                      </section>
+
+                      <section class = "ui two column center aligned grid" id = 'text-show'>
+                        <div class="column ui segment">
+
+                          <p class="skills__text">  <strong id = 'about-show'></strong></p>
+                        </div>
+
+                      </section>
+                    </div>
+                </div>
+
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills and Education Background</h2>
+
+                        <section class = 'ui two column center aligned grid' id = 'text-view'>
+                          <div class="column ui secondary segment">
+                          </div>
+                        </section>
+
+                        <section class = "ui two column center aligned grid" id = 'text-show'>
+                          <div class="column ui segment">
+                            <p class="skills__text">  <strong id = 'info-show'></strong></p>
+                          </div>
+
+                        </section>
+
+                    </div>
+
+                    <div class="skills__img">
+
+
+
+                      <section class = "ui two column center aligned grid" id = 'profile-view'>
+                        <div class="column ui segment">
+                          <img  class="ui image centered" id = 'imgSkill'>
+                        </div>
+                      </section>
+                      <section class = 'ui two column center aligned grid' id = 'file-view'>
+                        <div class="column ui secondary segment">
+
+                        </div>
+                      </section>
+
+                    </div>
+                </div>
+                <!--===== WORK =====-->
+                <section class="work section" id="work">
+                    <h2 class="section-title">Work</h2>
+
+                    <div class="work__container bd-grid">
+
+
+                      <div class = "ui two column center aligned grid" id = 'pdf-view'>
+                        <div class="column ui segment">
+                          <iframe src="http://docs.google.com/gview?url=http://path.com/to/your/pdf.pdf&embedded=true" id = "pdf"
+                  style="width:1000px; height:800px;" frameborder="0"></iframe>
+                        </div>
+                      </div>
+                      </section>
+
+
+                        <!--===== Contact =====-->
+                      <section class="contact section" id="contact">
+                          <h2 class="section-title">Contact</h2>
+                          <div class="contact__container bd-grid">
+                              <form action="" class="contact__form">
+                                  <input type="text" placeholder="Name" class="input">
+                                  <input type="mail" placeholder="Email" class="input">
+                                  <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                                  <input type="button" value="Send" class="contact__button button">
+                              </form>
+                          </div>
+                      </section>
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Invictus</p>
+            </div>
+            <p>&#169; 2020 copyright all right reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="./assets/js/about.js"></script>
+
+        <!-- FireBase set up -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+
+        <script src="./view.js"></script>
+    </body>
+</html>

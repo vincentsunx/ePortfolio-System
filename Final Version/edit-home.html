@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio Editing Introduction</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="home.html" class="nav__logo">Invictus</p></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Editing...</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"> </a>Introduction</li>
+                        <li class="nav__item"><a href="#work" class="nav__link"> </a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"> </a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                      <h1 class="home__title">Hi,<br>I'am <span class="home__title-color"><strong id = 'first-name'></strong></span><br><strong id = 'job'></strong></h1>
+                      <input type="text" id="linkedin" placeholder="LinkedIn" class="inputI">
+                      <div href="#" class="ui fuild teal submit button" onclick="updateLinkedin()">Enter</div><br>
+                      <input type="text" id="behance" placeholder="Bēhance" class="inputI">
+                      <div href="#" class="ui fuild teal submit button" onclick="updateBehance()">Enter</div><br>
+                      <input type="text" id="github" placeholder="GitHub" class="inputI">
+                      <div href="#" class="ui fuild teal submit button" onclick="updateGithub()">Enter</div>
+
+
+                </div>
+
+                <div class="home__social">
+
+                </div>
+
+
+                <div class="home__img">
+
+
+
+                  <section class = "ui two column center aligned grid" id = 'profile-view'>
+                    <div class="column ui segment">
+                      <img src = 'http://via.placeholder.com/1500' class="ui image centered" id = 'img'>
+                    </div>
+                  </section>
+                  <section class = 'ui two column center aligned grid' id = 'file-view'>
+                    <div class="column ui secondary segment">
+                      <form class="ui form">
+                        <div class="field">
+                          <input type = 'file' id='imageInput' style='display:none' onchange="chooseFile(event)"/>
+                        </div>
+
+                      </form>
+                    </div>
+                  </section>
+
+                </div>
+
+                <span style="position:absolute; right:50px; bottom:50px;">
+                <input type = 'file' id='imageInput' style='display:none' onchange="chooseFile(event)">
+                <a href="#" class="button" onclick='handleEditPicture()' >Upload Image</a>
+                <a href="edit-about.html" class="button">Next</a>
+
+            </section>
+
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Invictus</p>
+            <div class="footer__social">
+            </div>
+            <p>&#169; 2020 - All rights reserved to &copy;Invictus team</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/about.js"></script>
+
+        <!-- FireBase set up -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+
+
+        <script src="./upload.js"></script>
+    </body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Invictus - Eportfolio System</title>
+        <meta name="description" content="Invictus, Eportfolio, Eportfolio system, student, university, phd" />
+        <meta name="keywords"  content="Invictus, Eportfolio, Eportfolio system, student, university, phd" />
+        <meta name="Resource-type" content="Document"/>
+
+        <!-- Upload Font "https://fonts.google.com/" -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <!-- Styles CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/az-styles.css" />
+        <!-- Load Font Awesome Kit -->
+        <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
+        <!-- Load Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <!-- Load AOS CSS -->
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <!-- Slick Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    </head>
+    <body class="white">
+
+        <!-- Main Content Starts -->
+        <header class="b-gold">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Change path logo here -->
+                  <a class="brand logo" href="#"><img src="assets/img/logo.png" alt = "Invictus" class="img-fluid"></a>
+
+                  <!-- Collapse button -->
+                  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="animated-icon"><span></span><span></span><span></span></span>
+                  </button>
+                  <!-- Collapsible content -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promo">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="edit-home.html">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme-page.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search-page.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="contact-page.html"><i class="far fa-envelope"></i></a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " onclick = "logOut()"> Log out</a>
+                        </li>
+                    </ul>
+                  </div>
+                </nav>
+             </div>
+        </header>
+
+        <!-- Section -->
+        <div id="home" class="white">
+            <div class="content center">
+                <!-- SLIDER-->
+                <!-- Carousel Container -->
+                <div class="slider-container">
+                    <div id="slide-item" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Slider Navigation -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#slide-item" data-slide-to="0" class="active white"></li>
+                                <li data-target="#slide-item" data-slide-to="1" class="white"></li>
+                                <li data-target="#slide-item" data-slide-to="2" class="white" ></li>
+                            </ol>
+
+                            <!-- Slide -->
+                            <div class="carousel-item active">
+                               <div class="img-container slide five">
+                                    <div class="content-box">
+                                        <div class="content-data">
+                                            <h5 class="t-white">Write something about you</h5>
+                                            <span class="line gold"></span>
+                                            <div class="display t-white" data-aos="fade-down" data-aos-anchor-placement="center-bottom">Start <span class="ft-word">Your Eportfolio</span> journey</div>
+                                            <a href="edit-home.html" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="primary-btn no-bg large border-2 b-white white t-white">Start</a>
+                                        </div>
+                                    </div>
+                                   <div class="gradient-overlay op-5"></div>
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="carousel-item">
+                               <div class="img-container slide two">
+                                    <div class="content-box">
+                                        <div class="content-data">
+                                            <h5 class="t-white">want some ideas about how to introduce yourself?</h5>
+                                            <span class="line gold"></span>
+                                            <div class="display t-white" data-aos="fade-down" data-aos-anchor-placement="center-bottom">Here are <span class="ft-word">Examples</span> template</div>
+                                            <a href="#promo" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="primary-btn large border-2 b-brick dark-burgundy t-white">View some ideas</a>
+                                        </div>
+                                    </div>
+                                   <div class="gradient-overlay op-5"></div>
+                                </div>
+                            </div>
+
+                            <!-- Slide -->
+                            <div class="carousel-item">
+                               <div class="img-container slide three">
+                                    <div class="content-box">
+                                        <div class="content-data">
+                                            <h5 class="t-white">Want to learn more details?</h5>
+                                            <span class="line white"></span>
+                                            <div class="display t-white" data-aos="fade-down" data-aos-anchor-placement="center-bottom">Please  <span class="ft-word">communicate with us</span></div>
+                                            <a href="contact-page.html" data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="primary-btn light-blue large t-dark-clay">Contact </a>
+                                        </div>
+                                    </div>
+                                   <div class="gradient-overlay op-5"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Section Ends -->
+
+        <!-- Section -->
+        <!-- Promo Slider -->
+        <div id="promo" class="section white">
+            <div class="container">
+                <div class="content center">
+
+                    <h5 class="t-black"> Need some help? </h5>
+                    <span class="line gold"></span>
+                    <h2 class="t-black" > Look at those <span class="t-gold"> examples </span></h2>
+                    <h6>Take a look at the those general and well-formed Template <br> A good introduction left a deep impression on people</h6>
+
+                    <div class="mt-50">
+                        <section class="promo-slider slider">
+
+                            <!-- Promo Item -->
+                            <div class="promo-item">
+                                <a href="about-jack.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-gold">Click here to view</span>
+                                    </div>
+                                    <div class="promo gold">
+                                        <span class="t-white">Recommend</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Jack</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">996 is a Reward</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="assets/img/promo/mikonos.jpg" alt="Invictus" class="img-fluid"></div>
+                            </div>
+
+                            <!-- Promo Item -->
+                            <div class="promo-item">
+                                <a href="about-pony.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Pony</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Khorium Warrior</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="assets/img/promo/venezuela.jpg" alt="Invictus" class="img-fluid"></div>
+                            </div>
+
+                            <!-- Promo Item -->
+                            <div class="promo-item">
+                                <a href="about-bach.html" class="link-item">
+                                    <div class="hover-link">
+                                        <span class="primary-btn large black t-snow">more details</span>
+                                    </div>
+                                    <div class="title">
+                                        <h5 class="t-gold">Bach</h5>
+                                        <span class="line"></span>
+                                        <h3 class="t-white">Skywalker</h3>
+                                    </div>
+                                </a>
+                                <div class="image"><div class="hover"></div><img src="assets/img/promo/rome.jpg" alt="Invictus" class="img-fluid"></div>
+                            </div>
+
+                        </section>
+                        <div class="center"><a href="search-page.html" class="mt-50 primary-btn large no-bg border-2 b-black t-black">Search more</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- Section Ends -->
+
+        <!-- Section -->
+        <div id="about" class="section video">
+                <div class="container">
+                    <div class="content center">
+                        <h5 class="t-white">YOUR Introduction</h5>
+                        <span class="line gold"></span>
+                        <h2 class="t-white">State your <span class="t-gold">Discovery</span></h2>
+                        <h6 class="t-white paragraph">Here is the place, to start introducing yourself. The Eportfolio System will provide you a page and make it public. <span class="t-gold"> The best place to start your career </span> ----- Invictus Eportfolio.</h6>
+
+                        <a href="aboutme-page.html" class="mt-30 primary-btn large white t-black"> Start your journey</a>
+                    </div>
+                </div>
+            <!-- Video Background -->
+            <div class="video-back">
+                <div class="color-overlay op-7"></div>
+                <video autoplay loop muted>
+                    <source src="assets/video/wave.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div><!-- Section Ends -->
+
+        <div class="container"><div class="break-line gold op-3"></div></div>
+
+        <!-- Section -->
+        <div id="testimonial" class="section white ">
+            <div class="container center">
+                <h5 class="t-black">TESTIMONIALS</h5>
+                <span class="line gold"></span>
+                <h2 class="t-black" >Our <span class="t-gold">clients</span> say:</h2>
+
+                <!-- TESTIMONIALS -->
+                <div class="testimonial-container">
+                    <div id="t-item" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#t-item" data-slide-to="0" class="active gold"></li>
+                            <li data-target="#t-item" data-slide-to="1" class="gold"></li>
+                            <li data-target="#t-item" data-slide-to="2" class="gold"></li>
+                        </ol>
+                        <div class="carousel-inner content">
+
+                            <!-- Testimonial Item -->
+                            <div class="carousel-item active">
+                                <div class="item">
+                                    <div class="img center"><img src="assets/img/xiaoming.jpg"  alt="Invictus" class="img-fluid"></div>
+                                    <h6 class="text t-black">A must-have app. A very convenient portfolio system, also helpful to my study. Recommended 100%.</h6>
+                                    <div class="name t-black">Jack</div>
+                                    <div class="role t-dark-clay">CEO of Alibaba</div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial Item -->
+                            <div class="carousel-item">
+                                <div class="item">
+                                    <div class="img center"><img src="assets/img/xiaogang.jpg"  alt="Invictus" class="img-fluid"></div>
+                                    <h6 class="text t-black">Extremelly flexible and easy to use. Code is clean and all files well organized.</h6>
+                                    <div class="name t-black">Pony</div>
+                                    <div class="role t-dark-clay">CEO of Tencent</div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial Item -->
+                            <div class="carousel-item">
+                                <div class="item ">
+                                    <div class="img center"><img src="assets/img/Bach.jpg"  alt="Invictus" class="img-fluid"></div>
+                                    <h6 class="text t-black">Fast, easy, reliable, fun, flexible, modern. Really like it.</h6>
+                                    <div class="name t-black">Bach</div>
+                                    <div class="role t-dark-clay">a musician</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Section Ends -->
+        <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="links t-black">
+                        <a href="edit-home.html">Create</a>
+                        <a href="aboutme-page.html">About me</a>
+                        <a href="search-page.html">Search</a>
+                        <a href="contact-page.html">Contact</a>
+                    </div>
+                    <div class="copyright t-grey center">2020 - All rights reserved to &copy;Invictus team</div>
+                </div>
+            </footer>
+
+        <!-- JS files upload -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/validator.min.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="./script.js"></script>
+
+
+      <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+      <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyD7dOBg19mnoDdE_n2o5fV2FXoojeSDliw",
+          authDomain: "eportfolio-74c20.firebaseapp.com",
+          databaseURL: "https://eportfolio-74c20.firebaseio.com",
+          projectId: "eportfolio-74c20",
+          storageBucket: "eportfolio-74c20.appspot.com",
+          messagingSenderId: "384834138871",
+          appId: "1:384834138871:web:18aacf6823f9a0c3c219f2",
+          measurementId: "G-LZ3LTNRGCB"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
+      <script>
+       firebase.auth().onAuthStateChanged(function(user) {
+       if (user) {
+         //window.location.href = "index2.html";
+      }else{
+        window.location.href = "login.html";
+      }
+      });
+      </script>
+    </body>
+</html>

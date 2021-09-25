@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio Editing Research</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="home.html" class="nav__logo">Invictus</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Editing</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link"> </a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link"> </a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"> </a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+
+
+                  <section class = "ui two column center aligned grid" id = 'pdf-view'>
+                    <div class="column ui segment">
+                      <iframe src="http://docs.google.com/gview?url=http://path.com/to/your/pdf.pdf&embedded=true" id = "pdf"
+              style="width:700px; height:600px;" frameborder="0"></iframe>
+                    </div>
+                  </section>
+                  <section class = 'ui two column center aligned grid' id = 'file2-view'>
+                    <div class="column ui secondary segment">
+                      <form class="ui form">
+                        <div class="field">
+                          <input type = 'file' style='display:none' onchange="choosePDFFile(event)"/>
+                        </div>
+
+                      </form>
+                    </div>
+                  </section>
+
+
+
+                  </section>
+
+                </div>
+
+
+
+
+                <span style="position:absolute; right:50px; bottom:50px;">
+                <input type='file' id='pdfInput' style='display:none' onchange="choosePDFFile(event)" />
+                <a href="#" class="ui fuild teal submit button" onclick='handleEditPdf();'>Upload Files</a>
+                <a href="aboutme-page.html" class="button">Submit</a>
+                </div>
+            </section>
+
+
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/about.js"></script>
+
+        <!-- FireBase set up -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+        <script src="./upload.js"></script>
+    </body>
+</html>

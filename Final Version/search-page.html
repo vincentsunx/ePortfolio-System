@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Invictus - Eportfolio System</title>
+      <meta name="description" content="Invictus, Eportfolio, Eportfolio system, student, university, phd" />
+      <meta name="keywords"  content="Invictus, Eportfolio, Eportfolio system, student, university, phd" />
+      <meta name="Resource-type" content="Document"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Upload Font "https://fonts.google.com/" -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href ='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css' >
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+        <!-- Styles CSS -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/az-styles.css" />
+        <!-- Load Font Awesome Kit -->
+        <script src="https://kit.fontawesome.com/747940bb1c.js"></script>
+        <!-- Load Animate CSS -->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <!-- Load AOS CSS -->
+        <link rel="stylesheet" type="text/css" href="css/aos.css">
+        <!-- Slick Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+        <link rel="stylesheet" type="text/css" href="css/searchbar.css">
+        <link rel="stylesheet" type="text/css" href="css/a.css">
+
+    </head>
+    <body class="white">
+
+        <!-- Main Content Starts -->
+        <header class="b-gold white">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Change path logo here -->
+                  <a class="navbar-brand logo" href="home.html"><img src="assets/img/logo.png" alt="Invictus" class="img-fluid"></a>
+
+                  <!-- Collapse button -->
+                  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="animated-icon"><span></span><span></span><span></span></span>
+                  </button>
+                  <!-- Collapsible content -->
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="edit-home.html">Create</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutme-page.html">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="search-page.html">Search</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html"><i class="far fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                  </div>
+                </nav>
+             </div>
+        </header>
+
+        <!-- Section -->
+        <div id="about" class="section video">
+                <div class="container">
+                    <div class="content center mt-100">
+                        <div class="breadcrumb t-white">
+                            <a href="home.html" class="t-gold">Home</a> / Search
+                        </div>
+                    </div>
+                </div>
+            <!-- Video Background -->
+            <div class="video-back">
+                <div class="color-overlay op-3"></div>
+                <video class="back three img">
+                </video>
+            </div>
+        </div><!-- Section Ends -->
+
+        <!-- Section -->
+        <div class="section white">
+            <div class="container" id="posts">
+                <div class="content center">
+
+                    <h5 class="t-black">Meet Friends</h5>
+                    <span class="line gold"></span>
+                    <h2 class="t-dark">Here to Search <span class="t-gold">Others' Portfolio</span></h2>
+                    <div class="row text-justify mt-30">
+                    <div class="container">
+                      <!-- <div id="searchWrapper" >
+                          <input
+                              type="text"
+                              name="searchBar"
+                              id="searchBar"
+                              placeholder="search for other users"
+                          /> -->
+                          <div class="dropdownn">
+                            <form name="form1" method="post" action="">
+                              <input name="ok" type="button" onclick="myFunction();getId(this.id)" class="dropbtn" value="Filter By"></input>
+                            </form>
+                            <div id="myDropdown" class="dropdownn-content">
+                              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                              <a href="#" id="filterName" onclick="getId(this.id)">Name</a>
+                              <a href="#" id="filterCountry" onclick="getId(this.id)">Country</a>
+                              <a href="#" id="filterCity" onclick="getId(this.id)">City</a>
+                              <a href="#" id="filterUniversity" onclick="getId(this.id)">University</a>
+                              <a href="#" id="filterFaculty" onclick="getId(this.id)">Faculty</a>
+                              <a href="#" id="filterJob" onclick="getId(this.id)">Occupation</a>
+                            </div>
+                          </div>
+                          <input type = "text"  style="width: 83%;height: 32px;border-radius: 3px;border: 1px solid;padding: 5px 10px;
+                          font-size: 20px;" placeholder = "search for other users", id = "searchinfo">
+                          <a href="#" id="searchWrapper" onclick = "SearchButtonPressed()"></a>
+                          <button class="btn success bropbtn t-gold" onclick = "showResult()">Show</button>
+
+                      </div>
+                      <!-- searchbar finished -->
+
+
+
+
+                      <!-- Info Box -->
+                      <div class="col-lg-6 left mt-20" >
+                          <div class="post-item">
+                            <a href="javascript:delay('neweportp-page.html')" onclick = "firstPerson()">
+                              <img src="assets/img/account1.jpeg" class="img-fluid main" >
+                            </a>
+                              <h4 class="t-black"><div id="user1Name" style="font-size:40px;font-weight:bold;">No Record</div></h4>
+                              <div class="info-box-detail left">
+                                  <div class="post-info" style="font-size:15px;font-weight:bold;">University: <a class="author t-gold" id="user1University">No Record</a></div>
+                                  <br><div class="post-info" style="font-size:15px;font-weight:bold;">Occupation: <a class="author t-gold" id="user1Job">No Record</a></div>
+                              </div>
+                          </div>
+                      </div><!-- End -->
+
+                      <!-- Info Box -->
+                      <div class="col-lg-6 left mt-20" >
+                        <div class="post-item">
+                          <a href="javascript:delay('neweportp-page.html')" onclick = "secondPerson()">
+                            <img src="assets/img/account1.jpeg" class="img-fluid main" >
+                          </a>
+                              <h4 class="t-black"><div id="user2Name" style="font-size:40px;font-weight:bold;">No Record</div></h4>
+                              <div class="info-box-detail left">
+                                  <div class="post-info" style="font-size:15px;font-weight:bold;">University: <a class="author t-gold" id="user2University">No Record</a></div>
+                                  <br><div class="post-info" style="font-size:15px;font-weight:bold;">Occupation: <a class="author t-gold" id="user2Job">No Record</a></div>
+                              </div>
+                          </div>
+                      </div><!-- End -->
+
+                      <!-- Info Box -->
+                      <div class="col-lg-6 left mt-20" >
+                        <div class="post-item">
+                          <a href="javascript:delay('neweportp-page.html')" onclick = "thirdPerson()">
+                            <img src="assets/img/account1.jpeg" class="img-fluid main" >
+                          </a>
+                              <h4 class="t-black"><div id="user3Name" style="font-size:40px;font-weight:bold;">No Record</div></h4>
+                              <div class="info-box-detail left">
+                                  <div class="post-info" style="font-size:15px;font-weight:bold;">University: <a class="author t-gold" id="user3University">No Record</a></div>
+                                  <br><div class="post-info" style="font-size:15px;font-weight:bold;">Occupation: <a class="author t-gold" id="user3Job">No Record</a></div>
+                              </div>
+                          </div>
+                      </div><!-- End -->
+
+                      <!-- Info Box -->
+                      <div class="col-lg-6 left mt-20" >
+                        <div class="post-item">
+                          <a href="javascript:delay('neweportp-page.html')" onclick = "forthPerson()">
+                            <img src="assets/img/account1.jpeg" class="img-fluid main" >
+                          </a>
+                              <h4 class="t-black"><div id="user4Name" style="font-size:40px;font-weight:bold;">No Record</div></h4>
+                              <div class="info-box-detail left">
+                                  <div class="post-info" style="font-size:15px;font-weight:bold;">University: <a class="author t-gold" id="user4University">No Record</a></div>
+                                  <br><div class="post-info" style="font-size:15px;font-weight:bold;">Occupation: <a class="author t-gold" id="user4Job">No Record</a></div>
+                              </div>
+                          </div>
+                      </div><!-- End -->
+                    </div>
+                </div>
+            </div>
+        </div><!-- Section Ends -->
+
+        <!-- Section -->
+        <div class="section back five">
+            <div class="container center">
+                <h5 class="t-black">stay connected</h5>
+                <span class="line gold"></span>
+
+
+            </div>
+        </div><!-- Section Ends -->
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <div class="links t-black">
+                      <a href="edit-home.html">Create</a>
+                      <a href="aboutme-page.html">About me</a>
+                      <a href="search-page.html">Search</a>
+                      <a href="contact-page.html">Contact</a>
+                    </div>
+                    <div class="copyright t-grey center">2020 - All rights reserved to &copy;Invictus team</div>
+                </div>
+            </footer>
+
+        <!-- JS files upload -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/validator.min.js"></script>
+        <script src="js/contact.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/aos.js"></script>
+
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+=
+        <!-- FireBase set up -->
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="./search.js"></script>
+        <script src="./search_result.js"></script>
+        <!-- <script src="js/a.js"></script> -->
+
+    </body>
+</html>
